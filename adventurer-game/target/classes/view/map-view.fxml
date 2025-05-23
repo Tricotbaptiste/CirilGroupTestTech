@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.adventurer.controller.MapController"
+            prefHeight="600.0" prefWidth="800.0">
+    
+    <center>
+        <!-- Le GridPane pour la carte sera injecté programmatiquement -->
+        <ScrollPane fx:id="mapScrollPane" fitToWidth="true" fitToHeight="true">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </ScrollPane>
+    </center>
+    
+    <bottom>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="Vitesse:" />
+                <Slider fx:id="speedSlider" min="0.1" max="2.0" value="1.0" showTickLabels="true" showTickMarks="true" majorTickUnit="0.5" blockIncrement="0.1" />
+            </HBox>
+            
+            <HBox spacing="10" alignment="CENTER">
+                <Button fx:id="nextMoveBtn" text="Déplacement suivant" prefWidth="150" />
+                <Button fx:id="playAllBtn" text="Jouer tous les déplacements" prefWidth="180" />
+                <Button fx:id="pauseBtn" text="Pause" prefWidth="100" disable="true" />
+                <Button fx:id="resetBtn" text="Réinitialiser" prefWidth="100" />
+            </HBox>
+            
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Légende:" />
+                <HBox alignment="CENTER_LEFT" spacing="5">
+                    <Pane prefWidth="20" prefHeight="20" style="-fx-background-color: white; -fx-border-color: lightgray;" />
+                    <Label text="Case libre" />
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5">
+                    <Pane prefWidth="20" prefHeight="20" style="-fx-background-color: darkgreen; -fx-border-color: black;" />
+                    <Label text="Bois impénétrable" />
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="5">
+                    <Pane prefWidth="20" prefHeight="20" style="-fx-background-color: red; -fx-border-color: black;" />
+                    <Label text="Aventurier" />
+                </HBox>
+            </HBox>
+        </VBox>
+    </bottom>
+    
+</BorderPane>

@@ -1,0 +1,11 @@
+com\adventurer\util\MapTest.class
+com\adventurer\file\util\ExternalFileLoaderTest.class
+com\adventurer\file\util\ResourcesFileLoaderTest.class
+com\adventurer\util\MoveLoaderTest.class
+com\adventurer\type\AdventurerTest.class
+com\adventurer\view\MapViewApplicationLifecycleTest.class
+com\adventurer\view\CellFactoryTest.class
+com\adventurer\view\MapViewTest.class
+com\adventurer\view\MapViewTest$ConstructorTests.class
+com\adventurer\controller\MapControllerTest.class
+com\adventurer\util\FileMapLoaderTest.class

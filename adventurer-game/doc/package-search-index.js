@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.adventurer.controller"},{"l":"com.adventurer.exception"},{"l":"com.adventurer.file.util"},{"l":"com.adventurer.model"},{"l":"com.adventurer.type"},{"l":"com.adventurer.util"},{"l":"com.adventurer.view"}];updateSearchResults();
